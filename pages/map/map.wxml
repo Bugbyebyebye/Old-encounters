@@ -1,0 +1,45 @@
+<!-- pages/map/map.wxml
+<view class="container">
+    <view class="themap">
+        <map id="map"
+            class="map"
+            show-compass
+            show-location="{{true}}"
+            markers="{{markers}}"
+            show-label="true" 
+            callout="{{callout}}"
+            bindmarkertap="markertapHandler"
+            longitude="{{longitude}}" latitude="{{latitude}}">
+            <cover-view slot="callout">
+                <block wx:for="{{allInfo}}" wx:key="index">
+                    <cover-view marker-id="{{index+1}}" class="customCallout">
+                        <cover-view class="title">
+                            {{item.title}}
+                        </cover-view>
+                        <cover-view class="date">{{item.space}} {{item.createTime}}</cover-view>
+                        <cover-view class="container"> 
+                            <cover-image class="pic" src="{{item.piclist[0]}}"></cover-image>
+                            <cover-view class="content">
+                                {{item.content}}
+                            </cover-view>
+                        </cover-view>
+                    </cover-view>
+                </block>
+            </cover-view>
+        </map>
+    </view>
+    <view class="information">
+        <view class="info-title">附近信息</view>
+        <scroll-view class="scroll" scroll-y>
+            <view class="info-list">
+                <view class="box" wx:for="{{allInfo}}" wx:key="index">
+                    <info-item info="{{item}}"></info-item>
+                </view>
+            </view>
+        </scroll-view>
+        
+    </view>
+    <view class="add-info">
+        <t-icon name="add" size="30" data-name="{{item}}" bind:click="goAdd"/>
+    </view>
+</view> -->

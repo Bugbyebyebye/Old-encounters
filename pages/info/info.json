@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "t-swiper": "/miniprogram_npm/tdesign-miniprogram/swiper/swiper",
+        "t-swiper-nav": "/miniprogram_npm/tdesign-miniprogram/swiper-nav/swiper-nav"
+    },
+    "navigationStyle": "custom"
+}

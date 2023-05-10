@@ -1,0 +1,12 @@
+<!--components/recommend-item/recommend-item.wxml-->
+<view class="container" bindtap="goDetail">
+    <image src="{{good.piclist[0]}}" mode="aspectFill" class="background-image"/>
+    <view class="content">
+        <view class="recommend-title">
+            {{good.goodtitle}}
+        </view>
+        <view class="recommend-content">
+            <text>{{good.goodcontent}}</text>
+        </view>
+    </view>
+</view>

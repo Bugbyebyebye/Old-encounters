@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "t-input": "/miniprogram_npm/tdesign-miniprogram/input/input",
+        "t-textarea": "/miniprogram_npm/tdesign-miniprogram/textarea/textarea",
+        "t-picker": "/miniprogram_npm/tdesign-miniprogram/picker/picker",
+        "t-picker-item": "/miniprogram_npm/tdesign-miniprogram/picker-item/picker-item",
+        "t-cell": "/miniprogram_npm/tdesign-miniprogram/cell/cell",
+        "t-radio-group": "/miniprogram_npm/tdesign-miniprogram/radio-group/radio-group",
+        "t-radio": "/miniprogram_npm/tdesign-miniprogram/radio/radio"
+    }
+}

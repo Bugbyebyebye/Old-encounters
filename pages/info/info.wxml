@@ -1,0 +1,38 @@
+<view class="info-container">
+    <view class="info-pic">
+        <t-swiper
+        current="{{current}}"
+        autoplay="{{autoplay}}"
+        duration="{{duration}}"
+        interval="{{interval}}"
+        list="{{info.piclist}}"
+        navigation="{{ { type: 'dots-bar' } }}"
+        autoplay
+        height="350"
+        />
+    </view>
+
+    <!-- 信息内容 -->
+    <view class="info-content">
+        <view class="info-header">
+            <view class="date">{{info.createTime}} {{info.space}}</view>
+            <view class="title">{{info.title}}</view>
+        </view>
+        <view class="box">
+            <view class="user">
+                <view class="avatar">
+                    <image src="{{user.avatar}}" mode="" class="avatarPic"/>
+                </view>
+                <view class="content">
+                    <view class="nickname title">{{user.nickname}}</view>
+                    <view class="count title">{{user.contact}}</view>
+                </view>
+            </view>
+            <view class="information">
+                <view class="content text">
+                    {{info.content}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

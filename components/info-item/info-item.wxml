@@ -1,0 +1,15 @@
+<view class="container" bindtap="goInfoDetail">
+    <view class="img">
+        <image src="{{info.piclist[0]}}" mode="aspectFill" class="pic"/>
+    </view>
+    <view class="content">
+        <view class="info-title">{{info.title}}</view>
+        <view class="info-content">
+            {{info.content}}
+        </view>
+        <view class="info">
+            <view class="info-time">{{info.createTime}}</view>
+            <view class="info-place">{{info.space}}</view>
+        </view>
+    </view>
+</view>

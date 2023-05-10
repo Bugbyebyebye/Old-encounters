@@ -1,0 +1,163 @@
+
+.bigger {
+    --tab-font-size: 32rpx;
+  }
+.container{
+    width: 100%;
+    height: 800rpx;
+    opacity: 1;
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    .userInfo{
+        padding: 100rpx 20rpx;
+        .title{
+            padding-left: 50rpx;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0px;
+            line-height: 0px;
+            color: rgba(255, 255, 255, 1);
+            text-align: left;
+            vertical-align: top;
+            margin-bottom: 40rpx;
+        }
+        .user{
+            display: flex;
+            justify-content: left;
+            .avatar{
+                padding-left: 50rpx;
+                .pic{
+                    width: 150rpx;
+                    height: 150rpx;
+                    border-radius: 50%;
+                }
+            }
+            .info{
+                padding-top: 50rpx;
+                margin-left: 60rpx;
+                .nickname{
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 1);
+                    text-align: left;
+                    vertical-align: top;
+                }
+                .account{
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 1);
+                    text-align: left;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
+.userSale{
+    height: 500rpx;
+    transform: translateY(-300rpx);
+    opacity: 1;
+    width: 100%;
+    opacity: 1;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 1);
+    .sale-title{
+        padding:30rpx 0 0 30rpx;
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(28, 28, 28, 1);
+        text-align: left;
+        vertical-align: top;
+    }
+    .info{
+        height: 300rpx;
+        padding: 10rpx;
+        -webkit-overflow-scrolling: touch;
+        .btn-wrapper {
+            height: 100%;
+          }
+          .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 150rpx;
+            height: 100%;
+            color: white;
+          }
+          .delete-btn {
+            background-color: #e34d59;
+          }
+    }
+    .sale-goods{
+        .upload{
+            padding: 30rpx;
+        }
+        .goods{
+            height: 600rpx;
+        }
+        .goods-list{
+            padding:0 45rpx;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box{
+                margin-bottom: 20rpx;
+            }
+        }
+    }
+}
+
+.wrapper {
+    margin-bottom: 32rpx;
+  }
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+// 弹出层
+.block {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: #fff;
+    border-radius: 16rpx;
+  }
+  
+  .close-btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -32rpx;
+    bottom: calc(-1 * (48rpx + 64rpx));
+  }
+  
+  .wrapper {
+    margin: 32rpx;
+    display: block;
+  }
+
+.userInfomation{
+    margin-top: 10rpx;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10rpx;
+    .avatar{
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+        margin: 10rpx auto;
+    }
+    .title{
+        margin-top: 10rpx;
+        margin-left: 60rpx;
+    }
+    .ipt{
+        border-radius: 32rpx;
+        border: 1px solid rgba(216, 224, 240, 1);
+        margin: 10rpx auto;
+        width: 400rpx;
+    }
+}

@@ -1,0 +1,8 @@
+<!--components/good-item/good-item.wxml-->
+<view class="container" bindtap="goDetail">
+    <image src="{{good.piclist[0]}}" mode="aspectFill" class="background-image"/>
+    <view class="content">
+        <view class="date">{{good.createTime}}</view>
+        <view class="good-name">{{good.goodtitle}}</view>
+    </view>
+</view>

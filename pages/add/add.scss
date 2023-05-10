@@ -1,0 +1,25 @@
+page{
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    height: 100%;
+}
+
+.container{
+    padding:0 30rpx 20rpx 30rpx;
+    .bigger {
+        --tab-font-size: 32rpx;
+    }
+
+    .header{
+        display: inline-block;
+        .title{
+            margin: 70rpx 0 20rpx 40rpx;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-align: left;
+            vertical-align: top; 
+        } 
+    }
+
+
+}

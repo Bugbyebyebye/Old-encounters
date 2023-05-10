@@ -1,0 +1,14 @@
+/**app.wxss**/
+.title{
+    width: 200rpx;
+    height: 50rpx;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 32rpx;
+    font-weight: 700;
+    letter-spacing: 0rpx;
+    line-height: 30rpx;
+    color: rgba(21, 11, 71, 1);
+    text-align: left;
+    vertical-align: top;
+}

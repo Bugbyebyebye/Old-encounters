@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "info-item":"/components/info-item/info-item"
+    },
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
+}

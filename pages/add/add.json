@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "good-form":"/components/good-form/good-form",
+        "info-form":"/components/info-form/info-form",
+        "t-tabs": "/miniprogram_npm/tdesign-miniprogram/tabs/tabs",
+        "t-tab-panel": "/miniprogram_npm/tdesign-miniprogram/tab-panel/tab-panel"
+    }
+}

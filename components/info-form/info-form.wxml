@@ -1,0 +1,63 @@
+<view class="container">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="title">
+            <t-input 
+                label="信息标题" 
+                placeholder="请输入标题" 
+                value="{{form.title}}"
+                data-field-name="form.title"
+                bind:change='handleInputChange' 
+                clearable></t-input>
+        </view>
+        <view class="title">
+            <t-input 
+                label="地点" 
+                placeholder="请输入地点" 
+                value="{{form.place}}"
+                data-field-name="form.place"
+                bind:change='handleInputChange' 
+                clearable></t-input>
+        </view>
+      
+        <view class="intro">
+            <t-textarea 
+                label="信息内容" 
+                placeholder="请输入内容 200字以内" 
+                maxlength="200"
+                disableDefaultPadding="{{true}}"
+                data-field-name="form.content"
+                value="{{form.content}}" 
+                bind:change='handleInputChange' 
+                autosize />
+        </view>
+        <view class="wrapper">
+            <t-upload
+                media-type="{{['video','image']}}"
+                files="{{originFiles}}"
+                gridConfig="{{gridConfig}}"
+                bind:success="handleSuccess"
+                bind:remove="handleRemove"
+                bind:click="handleClick"
+                max="6"
+            />
+        </view>
+        <view class="btn-area">
+            <t-button 
+                theme="light" 
+                block 
+                size="medium"
+                shape="round"
+                bindtap="formReset"
+                >重置</t-button>
+            <t-button 
+                theme="primary" 
+                block 
+                size="medium"
+                shape="round" 
+                bindtap="formSubmit">提交</t-button>
+        </view>
+    </form>
+
+</view>
+
+<t-message id="t-message" />

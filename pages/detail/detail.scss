@@ -1,0 +1,126 @@
+.detail-pic{
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    width: 100%;
+    height: 60vh;
+    .bigPic{
+        display: inline;
+    }
+
+    .pic-list{
+        border-radius: 50rpx;
+        display: inline;
+        transform: translateY(-200rpx);
+        margin: 0 auto;
+        width: 80%;
+        height: 150rpx;
+        background: rgba(204, 204, 204,0.5);
+        display: flex;
+        justify-content: left;
+        padding: 0 20rpx 0 20rpx;
+        .box{
+            margin: auto 0;
+            .pic{
+                width: 100rpx;
+                height: 100rpx;
+            }
+            .pic:first-child{
+                padding-left: 10rpx;
+            }
+            .pic:last-child{
+                padding-right: 10rpx;
+            }
+            .pic:hover{
+                border: 1px solid blue;
+            }
+        }
+    }
+}
+
+.content{
+    margin-top: 20rpx;
+    padding: 30rpx;
+    height: 30vh;
+    .detail-title{
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(21, 11, 71, 1);
+        text-align: left;
+        vertical-align: top;
+        margin-bottom: 10rpx;
+    }
+    .detail-content{
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(21, 11, 71, 0.8);
+        text-align: left;
+        vertical-align: top;
+    }
+    .detail-info{
+        margin-top: 30rpx;
+        display: flex;
+        justify-content: space-between;
+        .info-title{
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(21, 11, 71, 0.8);
+            text-align: center;
+            vertical-align: top;
+        }
+        .count{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .text{
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(21, 11, 71, 1);
+        }
+        .price{
+            padding-left: 40rpx;
+        }
+        .extent{
+            .count{
+                padding-left: 10rpx;
+            }
+        }
+        .bargain{
+            padding-right: 40rpx;
+            .count{
+                padding-left: 30rpx;
+            }
+        }
+    }
+}
+
+.user{
+    margin-top: 10rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx;
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    height: 10vh;
+    .user-avatar{
+        padding-left: 40rpx;
+        .avatar{
+            height: 150rpx;
+            width: 150rpx;
+            border-radius: 50%;
+        }
+    }
+    .user-info{
+        padding: 20rpx 50rpx;
+        .text{
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 1);
+        }
+        .user-text{
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            font-weight: bolder;
+            text-align: center;
+            vertical-align: top;
+        }
+    }
+}

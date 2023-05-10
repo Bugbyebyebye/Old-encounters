@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "recommend-item":"/components/recommend-item/recommend-item",
+        "t-tabs": "/miniprogram_npm/tdesign-miniprogram/tabs/tabs",
+        "t-tab-panel": "/miniprogram_npm/tdesign-miniprogram/tab-panel/tab-panel"
+    },
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
+}

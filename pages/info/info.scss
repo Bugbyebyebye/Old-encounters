@@ -1,0 +1,106 @@
+page{
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    height: 100%;
+}
+.info-container{
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    height: 100%;
+}
+
+.info-pic{
+    height: auto;
+    transform: translateY(-20rpx);
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.info-content{
+    height: 40vh;
+    .info-header{
+        position: absolute;
+        padding: 40rpx;
+        transform: translateY(-140rpx);
+        .date{
+            margin-bottom: 20rpx;
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            text-align: left;
+            vertical-align: top;
+        }
+        .title{
+            width: auto;
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 1);
+            text-align: left;
+            vertical-align: top;
+            margin-bottom: 20rpx;
+        }
+    }
+    transform: translateY(-60rpx);
+    background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+    height: 600rpx;
+    border-radius: 30rpx 30rpx 20rpx 20rpx;
+
+    .box{
+        padding: 20rpx;
+        height: 40%;
+        .title{
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            line-height: 22px;
+            color: rgba(38, 38, 46, 1);
+            text-align: left;
+            vertical-align: top;
+        }
+        .text{
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            line-height: 22px;
+            color: rgba(38, 38, 46, 1);
+            text-align: left;
+            vertical-align: top;
+        }
+        .user{
+            background: rgba(228, 230, 241, 0.5);
+            border-radius: 50rpx;
+            margin: 10rpx 0 0 20rpx;
+            display: flex;
+            justify-content: left;
+            .avatar{
+                padding: 10rpx ;
+                padding-left: 20rpx;
+            }
+            .avatarPic{
+                border-radius: 100%;
+                width: 100rpx;
+                height: 100rpx;
+            }
+            .content{
+                padding: 10rpx 0 0 20rpx;
+            }
+            // .place{
+            //     margin-top: 50rpx;
+            //     margin-left: 40rpx;
+            //     padding: 10rpx 0 0 10rpx;
+            // }
+        }
+
+        .information{
+            margin: 20rpx auto;
+            width: 700rpx;
+            height: 30vh;
+            border-radius: 50rpx;
+            background: #ffffff;
+            box-shadow: #ccc 10rpx 10rpx 10rpx;
+            .content{
+                padding: 20rpx;
+            }
+        }
+    }
+}

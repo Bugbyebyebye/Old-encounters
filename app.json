@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/map/map",
+        "pages/user/user",
+        "pages/search/search",
+        "pages/detail/detail",
+        "pages/info/info",
+        "pages/add/add"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#6fa2ff",
+        "navigationBarTitleText": "旧遇",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "list": [
+            {
+                "iconPath": "/image/icon/home.png",
+                "selectedIconPath": "/image/icon/home-s.png",
+                "pagePath": "pages/index/index"
+            },
+            
+            {
+                "pagePath": "pages/user/user",
+                "iconPath": "/image/icon/user.png",
+                "selectedIconPath": "/image/icon/user-s.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "t-button": "/miniprogram_npm/tdesign-miniprogram/button/button",
+        "t-search": "/miniprogram_npm/tdesign-miniprogram/search/search",
+        "t-icon": "/miniprogram_npm/tdesign-miniprogram/icon/icon",
+        "t-upload": "/miniprogram_npm/tdesign-miniprogram/upload/upload",
+        "t-message": "/miniprogram_npm/tdesign-miniprogram/message/message",
+        "t-input": "/miniprogram_npm/tdesign-miniprogram/input/input"
+    },
+    "lazyCodeLoading": "requiredComponents"
+}
+

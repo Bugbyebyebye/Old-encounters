@@ -1,0 +1,96 @@
+<view class="container">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="title">
+            <t-input 
+                label="旧物名称" 
+                placeholder="请输入名称" 
+                value="{{form.name}}"
+                data-field-name="form.name"
+                bind:change='handleInputChange' 
+                clearable
+                ></t-input>
+        </view>
+        <view class="price">
+            <t-input
+            label="价格"
+            placeholder="0.00"
+            suffix="元"
+            align="right"
+            type="number"
+            data-field-name="form.price"
+            bind:change='handleInputChange' 
+            clearable
+            value="{{form.price}}"
+            />
+        </view>
+        <view class="degree">
+            <t-input label="新旧" 
+                placeholder="新旧程度" 
+                align="right" 
+                clearable
+                data-field-name="form.degree"
+                bind:change='handleInputChange' 
+                value="{{form.degree}}"/>
+        </view>
+        <!-- 是否还价 -->
+        <t-radio-group default-value="0" borderless t-class="box" bind:change="handleChange">
+            <t-radio block="{{false}}" label="可还价" value="0" />
+            <t-radio block="{{false}}" label="不可还价" value="1" />
+        </t-radio-group>
+        <!-- 类别 -->
+        <t-cell class="mb-16" title="选择类别" arrow hover note="{{kindText}}" bind:click="onKindPicker" />
+        <t-picker
+            visible="{{kindVisible}}"
+            value="{{kindValue}}"
+            title="选择类别"
+            cancelBtn="取消"
+            confirmBtn="确认"
+            bindchange="onPickerChange"
+            bindpick="onColumnChange"
+            bindcancel="onPickerCancel"
+            >
+            <t-picker-item options="{{kindArr}}" />
+            </t-picker>
+        <view class="wrapper">
+            <t-upload
+                media-type="{{['video','image']}}"
+                files="{{originFiles}}"
+                gridConfig="{{gridConfig}}"
+                bind:success="handleSuccess"
+                bind:remove="handleRemove"
+                bind:click="handleClick"
+                max="5"
+            />
+        </view>
+        <view class="intro">
+            <t-textarea 
+                label="旧物简介" 
+                placeholder="请输入简介 200字以内" 
+                maxlength="120"
+                disableDefaultPadding="{{true}}" 
+                value="{{form.intro}}"
+                data-field-name="form.intro"
+                bind:change='handleInputChange' 
+                autosize />
+        </view>
+        
+        <view class="btn-area">
+            <t-button 
+                theme="light" 
+                block 
+                size="medium"
+                shape="round"
+                bindtap="formReset"
+                >重置</t-button>
+            <t-button 
+                theme="primary" 
+                block 
+                size="medium"
+                shape="round" 
+                bindtap="formSubmit">提交</t-button>
+        </view>
+    </form>
+
+</view>
+
+<t-message id="t-message" />

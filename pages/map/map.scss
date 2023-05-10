@@ -1,0 +1,90 @@
+.container{
+    .themap{
+        width: 100%;
+        height: 60%;
+        .map{
+            width: 100%;
+            height: 900rpx;
+
+            .customCallout{
+                background: #fff;
+                border-radius: 20rpx;
+                width: 300rpx;
+                height: 200rpx;
+                padding: 10rpx;
+                .title{
+                    font-size: 19rpx;
+                }
+                .date{
+                    font-size: 18rpx;
+                }
+                .container{
+                    display: flex;
+                    justify-content: left;
+                    .pic{
+                        width: 100rpx;
+                        height: 100rpx;
+                        border-radius: 10rpx;
+                        padding: 10rpx;
+                    }
+                    .content{
+                        font-size: 18rpx;
+                        margin-left: 10rpx;
+                        margin-top: 10rpx;
+                        width: 200rpx;
+                        height: 100rpx;
+                        white-space: pre-wrap;
+                    }
+                }
+            }
+        }
+    }
+    .information{
+        transform: translateY(-60rpx);
+        width: 100%;
+        height: 500rpx;
+        opacity: 1;
+        border-radius: 50rpx 50rpx 0 0;
+        background: rgba(255, 255, 255, 1);
+        // background: red;
+        .info-title{
+            padding: 20rpx 0 0 40rpx;
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(21, 11, 71, 1);
+            text-align: left;
+            vertical-align: top;
+        }
+        .info-list{
+            padding: 10rpx;
+        }
+
+        .scroll{
+            margin-top: 20rpx;
+            height: 600rpx;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    .add-info{
+        position: fixed;
+        z-index: 100;
+        right: 20rpx;
+        bottom: 40rpx;
+        background: linear-gradient(226.89deg, rgba(94, 220, 255, 1) 0.05%, rgba(122, 120, 255, 1) 99.82%);
+        width: 120rpx;
+        height: 120rpx;
+        border-radius: 50%;
+        box-shadow: #ccc 10rpx 10rpx 10rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+}
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

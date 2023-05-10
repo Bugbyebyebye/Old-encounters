@@ -1,0 +1,16 @@
+.container{
+    height:1050rpx;
+    .wrapper{
+        padding: 20rpx;
+    }
+    .intro{
+        height: 350rpx;
+    }
+    .btn-area{
+        bottom: 20rpx;
+        margin: 20rpx 32rpx;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32rpx;
+    }
+}

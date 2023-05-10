@@ -1,0 +1,81 @@
+<view class="header">
+    <view class="header-title">旧遇</view>
+</view>
+<view class="search">
+    <view class="ipt">
+        <view class="example-search">
+            <t-search 
+                placeholder="搜索旧物" 
+                shape="round" 
+                value="{{searchText}}"
+                bind:change="changeHandle"
+                bind:submit="submitSearch" />
+        </view>
+    </view>
+</view>
+
+<view class="banner">
+        <swiper
+        previous-margin="30rpx"
+        circular
+        autoplay
+        indicator-dots
+        indicator-active-color=" #fff"
+        >
+            <swiper-item wx:for="{{noticePicArr}}" wx:key="_id">
+                <image src="{{item.pic}}" mode="aspectFill"/>
+            </swiper-item>
+        </swiper>
+</view>
+
+<view class="classify">
+    <view class="title">
+        热门分类
+    </view>
+    <scroll-view scroll-x>
+        <view class="item" wx:for="{{navPicArr}}" wx:key="id" >
+            <view bindtap="goSearch" data-searchid="{{ index }}">
+                <view class="pic">
+                    <image src="{{item.icon}}" mode="aspectFit"/>
+                </view>
+                <view class="text">
+                    {{item.classname}}
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view class="recommend">
+    <view class="title">
+        最新推荐
+    </view>
+    <scroll-view class="scroll" scroll-y>
+        <view class="contetent">
+            <view class="box" wx:for="{{goods}}" wx:key="_id">
+                <recommend-item good="{{item}}"></recommend-item>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+
+<view class="footer">
+    <t-footer text="{{text1}}"></t-footer>
+    <t-footer text="{{text2}}"></t-footer>
+</view>
+
+<t-message id="t-message" />
+
+<!-- // {
+            //     "iconPath": "/image/icon/map.png",
+            //     "selectedIconPath": "/image/icon/map-s.png",
+            //     "pagePath": "pages/map/map"
+            // }, -->
+            <!-- "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+        }
+    },
+    "requiredPrivateInfos": [ 
+        "getLocation"
+    ] -->

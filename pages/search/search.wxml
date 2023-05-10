@@ -1,0 +1,33 @@
+<view class="header">
+    <view class="header-title">发现</view>
+</view>
+<view class="search">
+    <view class="ipt">
+        <view class="example-search">
+            <t-search 
+                placeholder="搜索旧物" 
+                shape="round" 
+                value="{{searchText}}"
+                bind:change="changeHandle"
+                bind:submit="submitSearch" />
+        </view>
+    </view>
+</view>
+
+<t-tabs 
+    defaultValue="{{0}}"
+    value="{{navIndex}}" 
+    space-evenly="{{false}}" 
+    bind:change="onTabsChange" 
+    bind:click="onTabsClick"
+    wx:if="{{!searchText}}">
+  <t-tab-panel wx:for="{{navArr}}" wx:key="index" label="{{item.classname}}" value="{{index}}" />
+</t-tabs>
+
+<view class="list">
+    <view class="box" wx:for="{{navGoodArr}}" wx:key="index">
+        <recommend-item good="{{item}}"></recommend-item>
+    </view>
+</view>
+
+<t-message id="t-message" />

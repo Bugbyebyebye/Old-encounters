@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "recommend-item":"/components/recommend-item/recommend-item",
+    "t-footer": "/miniprogram_npm/tdesign-miniprogram/footer/footer"
+  },
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true
+}

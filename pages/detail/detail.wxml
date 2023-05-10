@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="detail-pic">
+        <image src="{{defaultPic}}" class="bigPic" mode="aspectFit"/>
+        <view class="pic-list">
+            <view class="box" wx:for="{{good.piclist}}" wx:key="index">
+                <image src="{{item}}" class="pic" mode="aspectFill" bindtap="changePic" data-item="{{item}}"/>
+            </view>
+        </view>
+    </view>
+
+    <view class="content">
+        <view class="detail-title">{{good.goodtitle}}</view>
+        <view class="detail-content">
+            {{good.goodcontent?good.content:'暂无简介'}}
+        </view>
+        <view class="detail-info">
+            <view class="price">
+                <view class="info-title">价格</view>
+                <view class="count"><text class="text">￥</text>{{good.price?good.price:'无'}}</view>
+            </view>
+            <view class="extent">
+                <view class="info-title">新旧程度</view>
+                <view class="count">{{good.degree?good.degree:'无'}}<text class="text"></text></view>
+            </view>
+            <view class="bargain">
+                <view class="info-title">可否还价</view>
+                <view class="count">{{good.bargain?good.bargain:'无'}}</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="user">
+        <view class="user-avatar">
+            <image src="{{user.avatar}}" class="avatar" mode="scaleToFill"/>
+        </view>
+        <view class="user-info">
+            <view class="user-text"><text class="text">卖家：</text>{{user.nickname}}</view>
+            <view class="user-text"><text class="text">联络： </text>{{user.contact}}</view>
+        </view>
+    </view>
+</view>

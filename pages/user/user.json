@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "good-item":"/components/good-item/good-item",
+        "t-swipe-cell": "/miniprogram_npm/tdesign-miniprogram/swipe-cell/swipe-cell",
+        "t-cell": "/miniprogram_npm/tdesign-miniprogram/cell/cell",
+        "t-dialog": "/miniprogram_npm/tdesign-miniprogram/dialog/dialog",
+        "t-popup": "/miniprogram_npm/tdesign-miniprogram/popup/popup"
+    },
+    "navigationBarTitleText": "个人中心",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
+}
