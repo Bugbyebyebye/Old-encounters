@@ -17,7 +17,7 @@
     </view>
 </view>
 <view class="userSale">
-    <!-- <view class="sale-title">我的消息</view>
+    <view class="sale-title">我的消息</view>
     <scroll-view scroll-y class="info">
         <block wx:for="{{myInfo}}" wx:key="_id">
             <t-swipe-cell>
@@ -33,7 +33,7 @@
             <view slot="right" class="btn delete-btn" bind:tap="showDialog" data-id="{{item._id}}" data-flag="{{'info'}}">删除</view>
             </t-swipe-cell>
         </block>
-    </scroll-view> -->
+    </scroll-view>
     <view class="sale-title">我的售卖</view>
     <view class="sale-goods">
         <view class="upload">

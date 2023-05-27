@@ -1,4 +1,3 @@
-<!-- pages/map/map.wxml
 <view class="container">
     <view class="themap">
         <map id="map"
@@ -42,4 +41,4 @@
     <view class="add-info">
         <t-icon name="add" size="30" data-name="{{item}}" bind:click="goAdd"/>
     </view>
-</view> -->
+</view>

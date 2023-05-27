@@ -11,7 +11,7 @@
     <view class="content">
         <view class="detail-title">{{good.goodtitle}}</view>
         <view class="detail-content">
-            {{good.goodcontent?good.content:'暂无简介'}}
+            {{good.goodcontent}}
         </view>
         <view class="detail-info">
             <view class="price">

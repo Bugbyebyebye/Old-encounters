@@ -66,16 +66,3 @@
 
 <t-message id="t-message" />
 
-<!-- // {
-            //     "iconPath": "/image/icon/map.png",
-            //     "selectedIconPath": "/image/icon/map-s.png",
-            //     "pagePath": "pages/map/map"
-            // }, -->
-            <!-- "permission": {
-        "scope.userLocation": {
-          "desc": "你的位置信息将用于小程序位置接口的效果展示" 
-        }
-    },
-    "requiredPrivateInfos": [ 
-        "getLocation"
-    ] -->

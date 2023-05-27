@@ -14,6 +14,11 @@
         "navigationBarTitleText": "旧遇",
         "navigationBarTextStyle": "white"
     },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取您的位置信息，用于提供服务"
+        }
+    },
     "tabBar": {
         "borderStyle": "white",
         "list": [
@@ -22,7 +27,11 @@
                 "selectedIconPath": "/image/icon/home-s.png",
                 "pagePath": "pages/index/index"
             },
-            
+            {
+                "pagePath": "pages/map/map",
+                "iconPath": "/image/icon/map.png",
+                "selectedIconPath": "/image/icon/map-s.png"
+            },
             {
                 "pagePath": "pages/user/user",
                 "iconPath": "/image/icon/user.png",
@@ -39,6 +48,6 @@
         "t-message": "/miniprogram_npm/tdesign-miniprogram/message/message",
         "t-input": "/miniprogram_npm/tdesign-miniprogram/input/input"
     },
-    "lazyCodeLoading": "requiredComponents"
+    "lazyCodeLoading": "requiredComponents",
+    "requiredPrivateInfos": ["getLocation"]
 }
-
